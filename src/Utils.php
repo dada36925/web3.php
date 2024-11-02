@@ -339,7 +339,7 @@ class Utils
             //         break;
             // }
             $base = new BigNumber(10);
-            $base = $base->pow(new BigInteger($fractionLength));
+            $base = $base->pow(new BigNumber($fractionLength));
             $fraction = $fraction->multiply($bnt)->divide($base)[0];
 
             if ($negative1 !== false) {
